@@ -8,6 +8,10 @@ Jupyter Notebook analysis focused on movie trends, genres, directors, and the
 
 **[Open the Netflix Content Analysis Dashboard](https://investigating-netflix-movies-ehimlffv3atmdxcr3dkrmw.streamlit.app/)**
 
+## 🖼️ Website Preview
+
+![Netflix Content Analysis Dashboard](assets/netflix-dashboard.png)
+
 ## 📌 Overview
 
 This project analyzes Netflix content using Python and presents the results in
@@ -24,6 +28,32 @@ statistics, and an optional raw-data table.
 - Analyze 1990s movie durations and top genres.
 - Review genre share and the most prolific directors.
 - Inspect correlation, numeric statistics, categorical statistics, and raw data.
+
+## 🧰 What I Used
+
+- **Python** to build the analysis and dashboard.
+- **Pandas** to load, clean, filter, group, and summarize the Netflix dataset.
+- **Matplotlib** and **Seaborn** to create charts such as line plots, bar charts,
+  histograms, pie charts, and the correlation heatmap.
+- **Streamlit** to turn the analysis into an interactive web application with
+  genre filters, tabs, metrics, tables, and visualizations.
+- **Jupyter Notebook** to document and rerun the exploratory 1990s analysis.
+- **GitHub** to store the source code and dataset, with **Streamlit Community
+  Cloud** used to publish the live dashboard.
+
+## 🔬 How I Used These Tools
+
+1. Loaded `netflix_data.csv` with Pandas and derived a decade column from each
+   title's release year.
+2. Filtered the catalog to movies and created reusable summaries for duration,
+   genre, decade, and director analysis.
+3. Investigated movies released from 1990 through 1999 to find the most common
+   duration and count short Action movies.
+4. Built charts with Matplotlib and Seaborn to show duration distributions,
+   decade trends, genre share, director counts, and correlations.
+5. Added the analysis to Streamlit so users can filter genres, switch between
+   dashboard sections, inspect statistics, and view the raw data.
+6. Deployed `app.py` to Streamlit Community Cloud and linked the live app above.
 
 ## 🔎 Key Findings
 
@@ -88,6 +118,7 @@ Investigating-Netflix-Movies/
 ├── app.py                              # Streamlit dashboard
 ├── Investigating_Netflix_Movies.ipynb # Exploratory analysis
 ├── netflix_data.csv                    # Netflix dataset
+├── assets/netflix-dashboard.png        # Dashboard screenshot
 ├── requirements.txt                    # Python dependencies
 └── README.md                           # Project documentation
 ```
