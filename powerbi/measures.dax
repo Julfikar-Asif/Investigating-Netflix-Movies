@@ -1,0 +1,25 @@
+Title Count = COUNTROWS('netflix_data')
+
+Movie Count =
+CALCULATE(
+    [Title Count],
+    'netflix_data'[type] = "Movie"
+)
+
+Movie Share =
+DIVIDE([Movie Count], [Title Count])
+
+Average Movie Duration =
+CALCULATE(
+    AVERAGE('netflix_data'[duration]),
+    'netflix_data'[type] = "Movie"
+)
+
+Missing Value Count =
+SUMX(
+    'netflix_data',
+    IF(ISBLANK('netflix_data'[title]), 1, 0)
+        + IF(ISBLANK('netflix_data'[genre]), 1, 0)
+        + IF(ISBLANK('netflix_data'[release_year]), 1, 0)
+        + IF(ISBLANK('netflix_data'[duration]), 1, 0)
+)

@@ -54,6 +54,23 @@ analyst and business intelligence roles:
 - **Clear data storytelling:** decision-oriented tabs, concise chart titles,
   and business-readable metrics.
 
+## 🧩 Extended Analytics Toolkit
+
+The repository now includes practical assets for a broader data analyst
+workflow:
+
+- **Power BI:** `powerbi/` contains import instructions, report-page guidance,
+  and reusable DAX measures for an executive dashboard.
+- **Machine learning:** `ml/netflix_duration_model.py` trains and evaluates a
+  reproducible scikit-learn duration regression baseline.
+- **SQL:** `sql/netflix_analysis.sql` provides portable catalog, trend, genre,
+  1990s, and data-quality queries.
+- **Data management:** `data_management/` contains a data dictionary and a
+  repeatable completeness/distinct-value quality report.
+
+These assets demonstrate how the same source data can move from profiling and
+SQL analysis into BI reporting and a documented machine-learning workflow.
+
 ## 🧰 What I Used
 
 - **Python** to build the analysis and dashboard.
@@ -62,6 +79,10 @@ analyst and business intelligence roles:
   histograms, pie charts, and the correlation heatmap.
 - **Streamlit** to turn the analysis into an interactive web application with
   genre filters, tabs, metrics, tables, and visualizations.
+- **scikit-learn** and **Joblib** to train, evaluate, and save a duration
+  regression model.
+- **SQL** for reusable relational analysis queries.
+- **Power BI/DAX** for a business intelligence reporting workflow.
 - **Jupyter Notebook** to document and rerun the exploratory 1990s analysis.
 - **GitHub** to store the source code and dataset, with **Streamlit Community
   Cloud** used to publish the live dashboard.
@@ -79,6 +100,8 @@ analyst and business intelligence roles:
 5. Added the analysis to Streamlit so users can filter genres, switch between
    dashboard sections, inspect statistics, and view the raw data.
 6. Deployed `app.py` to Streamlit Community Cloud and linked the live app above.
+7. Added SQL, Power BI, machine-learning, and data-quality assets so the
+   analysis can be reused across common industry tools.
 
 ## 🔎 Key Findings
 
@@ -144,7 +167,11 @@ Investigating-Netflix-Movies/
 ├── Investigating_Netflix_Movies.ipynb # Exploratory analysis
 ├── netflix_data.csv                    # Netflix dataset
 ├── assets/netflix-dashboard.png        # Dashboard screenshot
+├── data_management/                    # Data dictionary and quality checks
+├── ml/                                 # Machine-learning workflow
+├── powerbi/                             # Power BI guidance and DAX measures
 ├── requirements.txt                    # Python dependencies
+├── sql/                                # Reusable SQL analysis
 └── README.md                           # Project documentation
 ```
 
