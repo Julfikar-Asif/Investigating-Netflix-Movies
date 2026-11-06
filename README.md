@@ -17,7 +17,7 @@ Jupyter Notebook analysis focused on movie trends, genres, directors, and the
 This project analyzes Netflix content using Python and presents the results in
 an interactive dashboard. The dashboard includes historical trends, a focused
 analysis of 1990s movies, genre and director breakdowns, descriptive
-statistics, and an optional raw-data table.
+statistics, data-quality checks, and an optional raw-data table.
 
 ## ✨ Features
 
@@ -28,6 +28,31 @@ statistics, and an optional raw-data table.
 - Analyze 1990s movie durations and top genres.
 - Review genre share and the most prolific directors.
 - Inspect correlation, numeric statistics, categorical statistics, and raw data.
+- Filter by content type, genre, release year, and duration.
+- Download the filtered dataset as a CSV for further analysis.
+- Audit missing values and duplicate rows before making conclusions.
+
+## 📈 Analyst Techniques Demonstrated
+
+This project uses practical techniques commonly expected in current data
+analyst and business intelligence roles:
+
+- **Exploratory data analysis (EDA):** distributions, summary statistics, and
+  segment comparisons.
+- **KPI design:** filtered title count, movie share, average duration, and top
+  genre.
+- **Time-series analysis:** title volume by release year and average duration
+  by decade.
+- **Segmentation and filtering:** slicing results by content type, genre, year,
+  and duration to answer focused questions.
+- **Data quality profiling:** completeness percentages, missing-cell counts, and
+  duplicate-row checks.
+- **Correlation analysis:** checking relationships between numeric fields before
+  interpreting patterns.
+- **Self-service analytics:** interactive controls and CSV export so users can
+  investigate their own questions.
+- **Clear data storytelling:** decision-oriented tabs, concise chart titles,
+  and business-readable metrics.
 
 ## 🧰 What I Used
 
